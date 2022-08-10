@@ -1,0 +1,70 @@
+Started by user [8mha:////4MI723H4osMUy70UnhN5NEuVWD+b01ZnaP55GzKKfnzmAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL94ozEosSSDADYacT3wgAAAA==[0mSharath U
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sharathuhtarahs/C_program.git # timeout=10
+Fetching upstream changes from https://github.com/sharathuhtarahs/C_program.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.1'
+ > git fetch --tags --force --progress -- https://github.com/sharathuhtarahs/C_program.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 2c507a2644700ee2b1b94caab48dee413d1e7281 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2c507a2644700ee2b1b94caab48dee413d1e7281 # timeout=10
+Commit message: "Delete sum2.o"
+First time build. Skipping changelog.
+[test] $ /bin/sh -xe /tmp/jenkins3050978922909005708.sh
++ cd /var/lib/jenkins/workspace/test/
++ make ABC.exe
+gcc -c main.c
+main.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:2:1: warning: implicit declaration of function ‘biggest2’ [-Wimplicit-function-declaration]
+ biggest2();
+ ^~~~~~~~
+main.c:3:1: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+ factorial();
+ ^~~~~~~~~
+main.c:4:1: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+ biggest3();
+ ^~~~~~~~
+main.c:5:1: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+ palindrome();
+ ^~~~~~~~~~
+main.c:6:1: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+ reverse();
+ ^~~~~~~
+main.c:7:1: warning: implicit declaration of function ‘sum2’ [-Wimplicit-function-declaration]
+ sum2();
+ ^~~~
+gcc -c big2.c
+big2.c:5:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest2() {
+ ^~~~~~~~
+gcc -c big3.c
+big3.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest3()
+ ^~~~~~~~
+gcc -c fact.c
+fact.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ factorial() {
+ ^~~~~~~~~
+gcc -c palindrome.c
+palindrome.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ palindrome()
+ ^~~~~~~~~~
+gcc -c rev.c
+rev.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ reverse() {
+ ^~~~~~~
+gcc -c sum2.c
+sum2.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sum2() {
+ ^~~~
+gcc -o ABC.exe main.o big2.o big3.o fact.o palindrome.o rev.o sum2.o
+Finished: SUCCESS

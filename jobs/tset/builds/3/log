@@ -1,0 +1,22 @@
+Started by user [8mha:////4MI723H4osMUy70UnhN5NEuVWD+b01ZnaP55GzKKfnzmAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL94ozEosSSDADYacT3wgAAAA==[0mSharath U
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/tset
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sharathuhtarahs/C_program.git
+ > git init /var/lib/jenkins/workspace/tset # timeout=10
+Fetching upstream changes from https://github.com/sharathuhtarahs/C_program.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.1'
+ > git fetch --tags --force --progress -- https://github.com/sharathuhtarahs/C_program.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sharathuhtarahs/C_program.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7e9e739a65c68816e058fa393e9d48b6e8109a82 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7e9e739a65c68816e058fa393e9d48b6e8109a82 # timeout=10
+Commit message: "Delete makefile"
+ > git rev-list --no-walk 7e9e739a65c68816e058fa393e9d48b6e8109a82 # timeout=10
+Finished: SUCCESS
